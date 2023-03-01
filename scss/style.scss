@@ -1,0 +1,563 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,header,footer,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #000;
+    }
+
+.conteiner {
+        width: 1175px;
+        margin: 0 auto;
+        }      
+
+.button {
+        font-size: 12px;
+        padding: 25px 45px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 5%;
+        cursor: pointer;
+        }
+
+button:hover {
+        transform: scale(1.05);
+        }
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 74px;
+
+    &__nav ul{
+        display: flex;
+        justify-content: space-around;
+        width: 492px;
+    }
+
+    &__nav-items:hover {
+        text-decoration: underline;
+    }
+
+    &__name{
+        margin-left: -240px;
+        font-family: 'Playfair Display';
+        font-style: Regular;
+    }
+
+
+    &__logo{
+    background-image: url(../img/logotype.svg);
+    width: 20px;
+    height: 20px;
+    }
+
+    &__icons{
+        width: 120px;
+        display: flex;
+        justify-content: space-around;
+        &-icon01{
+            background-image: url(../img/Vector1.svg);
+            width: 16px;
+            height: 16px;
+            color: white;
+        }
+
+        &-icon02{
+            background-image: url(../img/Vector001.svg);
+            width: 20px;
+            height: 16px;
+        }
+
+        &-icon03{
+            background-image: url(../img/Vector002.svg);
+            width: 18px;
+            height: 16px;
+        }
+    }
+}
+
+.block01{
+    border-color: #FDFDFB;
+
+    &__img {
+    background-image: url(../img/Ellipse01.png);
+    width: 496px;
+    height: 804px;
+    margin-left: 730px;
+    display: flex;
+    }
+
+    &__summer {
+        width: 450px;
+        height: 250px;
+        margin-left: -365px;
+        margin-top: 240px;
+
+        &-line {
+            background-image: url(../img/Line.png);
+            width: 50px;
+            height: 2px;
+            padding-right: 20px;
+        }
+
+        &-title {
+            font-family: 'Playfair Display';
+            font-style: Regular;
+            font-size: 45px;
+            line-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 430px;
+        }
+
+        &-collection {
+            font-family: 'Playfair Display';
+            font-size: 30px;
+            line-height: 40px;
+            padding-left: 80px;
+            padding-top: 6px;
+        }
+
+        &-text {
+            margin-top: 27px;
+            width: 350px;
+            font-size: 14px;
+            line-height: 22px;
+            padding-left: 80px;
+        }
+
+        &-button {
+            margin-top: 52px;
+            margin-left: 75px;
+            background-color: rgba(68, 66, 64, 1);
+            color: #FDFDFB;
+        }
+    }
+
+    &__clock {
+        width: 400px;
+        margin-left: 130px;
+        margin-top: -20px;
+
+        &-foto {
+            background-image: url(../img/watch_main.png);
+            width: 503px;
+            height: 805px;
+            margin-top: -167px;
+        }
+
+        &-price {
+            font-size: 16px;
+            line-height: 22px;
+            margin-top: 160px;
+            margin-left: -75px;
+        }
+
+        &-ruble {
+            background-image: url(../img/ruble.svg);
+            width: 10px;
+            height: 13px;
+            margin-top: -18px;
+            margin-left: -18px;
+        }
+
+        &-cherta {
+            background-image: url(../img/Line.png);
+            width: 50px;
+            height: 2px;
+            margin-left: 10px;
+            margin-top: -5px;
+        }
+
+        &-diameter {
+            font-size: 16px;
+            margin-top: -152px;
+            line-height: 22px;
+            margin-left: 470px;
+            width: 150px;
+        }
+
+        &-cherta01 {
+            background-image: url(../img/Line.png);
+            width: 50px;
+            height: 2px;
+            margin-left: 400px;
+            margin-top: -10px;
+        }
+    }
+}
+
+.block02 {
+    &__title{
+        font-family: 'Playfair Display';
+        font-size: 32px;
+        margin-left: 790px;
+        margin-top: 45px;
+    }
+
+    &__button {
+        font-size: 16px;
+        margin-left: 1420px;
+        border-bottom: 2px solid #C4C0B6;
+        padding: 2px;
+        background-color: rgba(28,28,28,0);
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: 400px 400px 400px;
+        margin-left: 400px;
+        margin-top: 65px;
+
+        &-name {
+            font-family: 'Playfair Display';
+            font-weight: bolt;
+            font-size: 14px;
+            line-height: 25px;
+        }
+
+        &-price {
+            margin-top: 5px;
+        }
+
+        &-ruble {
+            background-image: url(../img/ruble.svg);
+            width: 9px;
+            height: 10px;
+            margin-left: 45px;
+            margin-top: -13px;
+        }
+
+        &-img01 {
+            background-image: url(../img/watch_1.png);
+            width: 313px;
+            height: 313px;
+        }
+
+        &-img02 {
+            background-image: url(../img/watch_2.png);
+            width: 313px;
+            height: 313px;
+        }
+
+        &-img03 {
+            background-image: url(../img/watch_3.png);
+            width: 313px;
+            height: 313px;
+        }
+
+        &-button {
+            display: flex;
+            justify-content: space-around;
+            font-family: 'Playfair Display';
+            font-size: 16px;
+            line-height: 22px;
+            margin-left: 40px;
+            margin-top: 22px;
+            background-color: rgba(28,28,28,0);
+            width: 90px;
+        }
+
+        &-line02 {
+            background-image: url(../img/Line.png);
+            width: 30px;
+            height: 2px;
+            margin-left: -38px;
+            margin-top: 11px;
+        }
+    }
+}
+
+.block03 {
+    margin-top: 114px;
+    width: 1352px;
+    display: flex;
+    overflow: hidden;
+    height: 520px;
+
+    &__baner {
+    background-image: url(../img/background_banner_1.png);
+    width: 488px;
+    height: 519px;
+    padding-top: 170px;
+    }
+
+    &__items {
+        background-image: url(../img/photo_banner.png);
+        width: 530px;
+        height: 414px;
+        margin-top: 50px;
+        margin-left: -305px;
+    }
+
+    &__arrow {
+        margin-top: 435px;
+        margin-left: 360px;
+        width: 65px;
+        height: 12px;
+        display: flex;
+
+        &-left {
+            background-image: url(../img/arrow_left.svg);
+            width: 8px;
+            height: 13px;
+        }
+
+        &-count {
+            cursor: rgba(27, 26, 23, 0.82);
+            margin-left: 12px;
+        }
+
+        &-write {
+            background-image: url(../img/arrow_right.svg);
+            width: 8px;
+            height: 13px;
+            margin-left: 12px;
+        }
+    }
+
+    &__content {
+        width: 440px;
+        margin-top: 140px;
+        margin-left: 65px;
+
+        &-title {
+            font-family: 'Playfair Display';
+            font-size: 32px;
+            line-height: 43px;
+        }
+
+        &-text {
+            margin-top: 30px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        &-button {
+            margin-top: 35px;
+            color: white;
+            background-color: #D4B098;
+        }
+    }
+
+    &__linegradient1 {
+        width: 549px;
+        height: 365px;
+        border-radius: 50%;
+        border: 2px solid rgba(212, 176, 152, 1);
+        margin-right: -580px;
+        margin-top: -146px;
+    }
+
+    &__linegradient2 {
+        width: 936px;
+        height: 744px;
+        border-radius: 50%;
+        border: 2px solid rgba(212, 176, 152, 1);
+        margin-right: -680px;
+    }
+}
+
+.block04 {
+    display: flex;
+    padding-top: 80px;
+
+    &__news {
+        width: 472px;
+        margin-top: 140px;
+
+        &-title {
+            font-family: 'Playfair Display';
+            font-size: 32px;
+            line-height: 43px;
+        }
+
+        &-text {
+            font-size: 16px;
+            line-height: 27px;
+            width: 376px;
+            margin-top: 30px;
+        }
+
+        &-massengers {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 105px;
+            margin-top: 110px;
+        }
+
+        &-inst {
+            background-image: url(../img/instagram_icon.svg);
+            width: 23px;
+            height: 23px;
+        }
+
+        &-face {
+            background-image: url(../img/facebook_icon.svg);
+            width: 12px;
+            height: 22px;
+        }
+
+        &-twit {
+            background-image: url(../img/twitter_icon.svg);
+            width: 22px;
+            height: 17px;
+        }
+    }
+
+    &__fotos {
+        display: flex;
+        margin-left: 70px;
+
+        &-foto01 {
+            background-image: url(../img/photo_1.jpg);
+            width: 242px;
+            height: 228px;
+        }
+
+        &-foto02 {
+            background-image: url(../img/photo_2.jpg);
+            width: 242px;
+            height: 222px;
+            margin-top: 10px;
+        } 
+
+        &-foto03 {
+            background-image: url(../img/photo_3.jpg);
+            width: 377px;
+            height: 460px;
+            margin-left: 10px;
+        }
+    }
+}
+
+.footer {
+    background-color:rgba(68, 66, 64, 1);
+    height: 275px;
+    margin-top: 90px;
+
+    &__menu a:hover{
+        text-decoration: underline;
+    }
+
+    &__menu {
+        display: flex;
+        padding-top: 76px;
+        color: white;
+
+        &-row {
+            display: flex;
+            align-items: center;
+        }
+
+        li {
+            margin-top: 10px;
+        }
+
+        ul {
+            margin-top: 30px;
+        }
+
+        &-logo {
+            background-image: url(../img/Ellipsewhite.svg);
+            width: 27px;
+            height: 27px;
+        }
+
+        &-name {
+            font-family: 'Playfair Display';
+            font-style: Bolt;
+            letter-spacing: 1.5px;
+            margin-left: 10px;
+        }
+
+        &-logotype {
+            margin-left: 90px;
+        }
+
+        &-tel {
+            margin-top: 22px;
+        }
+
+        &-tel a {
+            color: white;
+        }
+
+        &-email {
+            margin-top: 10px;
+        }
+
+        &-email a {
+            color: white;
+        }
+
+        &-about {
+            margin-left: 130px;
+            margin-top: 7px;
+        }
+
+        &-comp {
+            font-style: bolt;
+            font-size: 16px;
+            line-height: 16px;
+            letter-spacing: 1px;
+        }
+
+        &-client {
+            margin-left: 135px;
+            margin-top: 5px;
+        }
+
+        &-payment{
+            margin-left: 100px;
+            margin-top: 5px;
+        }
+
+        &-item {
+            color: white;
+            margin-top: 20px;
+        }
+    }
+}
